@@ -1,24 +1,24 @@
 # Site settings
 title: jykoo document
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://koo-jeongyeon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # User settings
-username: koo-jeongyeon
+username: Koo-Jeongyeon
 user_description: I'm gonna live by achieving everything i want.
 user_title: Backend Developer
 email: noey458749@gmail.com
 # twitter_username: lorem_ipsum
-instagram_username: koo-jeongyeon
-facebook_username: koo-jeongyeon
-linkedin_username: koo-jeongyeon
+# instagram_username: koo-jeongyeon
+# facebook_username: koo-jeongyeon
+# linkedin_username: koo-jeongyeon
 github_username:  koo-jeongyeon
 # medium_username: lorem_ipsum
-# medium_url: lorem_ipsum.medium.com
+medium_url: koojeongyeons-engineering-wiki.gitbook.io/engineering-wiki/
 # gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
