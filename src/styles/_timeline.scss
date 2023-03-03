@@ -2,8 +2,9 @@ $primary-color: #777;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 #timeline {
-    background: #ffffff;
+    background: #1a222c;
     padding: 8rem 0;
+    color: #FFF;
 } 
 
 .timeline-main {
@@ -11,6 +12,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     margin: 0 auto;
 
     .timeline-main-title {
+        color: #fff;
         margin: 0 auto;
         padding-top: 1em;
         padding-bottom: 2em;
@@ -69,6 +71,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
         width: 100%;
         h1, h2, h3, h4, h5, h6 {
             line-height: inherit;
+            color: #FFF;
         }
     }
 
@@ -166,9 +169,6 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
         }
         .timeline-content {
             padding: 40px 0 70px;
-        }
-        .timeline-title {
-            margin: 0;
         }
     }
 
