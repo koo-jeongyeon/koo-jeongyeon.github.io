@@ -23,6 +23,7 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
+    padding: 1rem;
     font-size: 50px;
     display: block;
     line-height: 1;
@@ -38,6 +39,7 @@
     line-height: 1;
     color: #FFF;
     margin-top: 10px;
+    margin-bottom: 30px;
     @media only screen and (min-width:$cut){
       font-size: 34px;
     }

@@ -3,25 +3,25 @@
   padding: 8rem 0;
 }
 
+.tech {
+  margin: 10px;
+  flex: 1 1 0;
+  h2, h3 {
+    font-weight: 400;
+  }
+}
+
 .main-container {
   font-size: 120%;
   width: 90%;
   margin: 0 auto;
   max-width: 90rem;
   @media only screen and (min-width: $cut) {
-    width: 90%;
+    width: 80%;
   }
   svg {
     width: 60px !important;
     height: auto;
-  }
-}
-
-.tech {
-  margin: 10px;
-  flex: 1 1 0;
-  h2, h3 {
-    font-weight: 400;
   }
 }
 
@@ -47,7 +47,7 @@
   h1 {
     font-weight: 400;
   }
-}
+} 
 
 .user-details-title {
   margin: 0 auto;
@@ -70,9 +70,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10rem;
-}
-
-.about__content {
+  padding-top: 2em;
   .about__content-main {
     .about__content-title {
       font-weight: 700;
@@ -102,4 +100,3 @@
   }
   }
 }
-
