@@ -1,0 +1,34 @@
+#education {
+    background: #ffffff;
+    padding: 8rem 0;
+}
+
+.education-main {
+    text-align: center;
+    margin: 0 auto;
+
+    .education-main-title {
+        margin: 0 auto;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+  }
+
+.education-card-wrapper{
+    .card {
+        background-color: #fff;
+        box-shadow: 0 6px 30px 0 rgb(0 0 0 / 15%);
+     //   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+        color: #4a4a4a;
+        max-width: 100%;
+        position: relative;
+        .card-content {
+            padding: 1.5rem;
+            background-color: transparent;
+        }
+    }
+}
+
+.end-container {
+    padding-bottom: 8rem;
+}
