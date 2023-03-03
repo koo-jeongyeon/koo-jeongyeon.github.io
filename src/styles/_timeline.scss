@@ -37,7 +37,6 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 }
 .container-fluid {
     .row {
-        padding: 0 0 4em 0;
         &:nth-child(even) {
             background: #F1F4F5;
         }
