@@ -26,11 +26,29 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">DotDotDot</h3>
-                            <p>버그수정 안정화 작업 2023-01
-                                S3에 음성파일 업로드 이벤트 트리거 발생시 lambda실행하여 MongoDB 업데이트, 로컬로 테스트 가능한 SAM세팅
-                                
-                                ELK세팅 2022-11 ~ 2022-12
-                                ELB(elastic beanstalk)세팅, 도커로 배포 및 filebeat, logstash 활용해 elastic cloud로 로그데이터 수집 </p>
+                            <ul>
+                                <li>AWS beanstalk,ECR 활용하여 Docker Compose파일로 운영/개발 환경 생성, MongoDB VPC peering</li>
+                                <li>S3에 음성파일 업로드 이벤트 트리거 발생시 lambda실행, 로컬 테스트 가능하게 SAM세팅</li>
+                                <li>filebeat,logstash를 AWS beanstalk에 세팅하여 Elastic Cloud로 서비스 로그데이터 수집, 지속적인 비용절감 고민</li>
+                                <li>Spring Boot,MongoDB atlas로 Unity서비스와 통신하는 서버 API개발, Spring Security/JWT로 인증인가 구현</li>
+                                <li>Spring Boot,Vue.js,MongoDB 활용한 운영툴 개발</li>
+                            </ul>
+                            <ul class="tag-list">
+                                <li class="">java</li>
+                                <li class="">spring boot</li>
+                                <li class="">gradle</li>
+                                <li class="">maven</li>
+                                <li class="">vue.js</li>
+                                <li class="">aws elb</li>
+                                <li class="">aws ecr</li>
+                                <li class="">aws s3</li>
+                                <li class="">aws vpc</li>
+                                <li class="">aws route53</li>
+                                <li class="">aws lambda</li>
+                                <li class="">docker</li>
+                                <li class="">mongodb</li>
+                                <li class="">git</li>
+                            </ul>
                         </div>
                     </li>
 
@@ -48,14 +66,21 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">루트에너지</h3>
-                            <p>루트에너지 솔루션 소스분석 후 데이터베이스 스키마 정리
-                                외부팀에서 데이터 요청시 필요한 데이터 추출 업무 진행
-                                
-                                GCP 개발서버 생성 2022-01 ~ 2022-01
-                                GCP에 오픈소스vpn과 쉘스크립트로 내부망 연결후 아파치 톰캣 개발서버 생성
-                                
-                                고객데이터 배치 프로그램 개발 2021-10 ~ 2021-12
-                                온투법에 의해 자금세탁방지를 위한 KYC(고객신원확인)을 진행해야 하는 업무를 맡게 되어 spring boot와 외부 KYC 솔루션 API를 활용해 개발</p>
+                            <ul>
+                                <li>개발(테스트용)서버가 없어 GCP로 VPN과 쉘스크립트로 내부망 연결후 ApacheTomcat 개발서버 생성하여 테스트 가능하게 구축</li>
+                                <li>Spring Boot와 외부 KYC 솔루션 API를 연계해 Spring Scheduling으로 배치 프로그램 개발</li>
+                                <li>외부팀에서 데이터 요청시 필요한 데이터 쿼리짜서 추출하는 업무 진행</li>
+                                <li>소스분석, 데이터베이스 스키마 엑셀로 정리</li>
+                            </ul>
+                            <ul class="tag-list">
+                                <li class="">java</li>
+                                <li class="">spring boot</li>
+                                <li class="">gradle</li>
+                                <li class="">jsp/jquery</li>
+                                <li class="">GCP</li>
+                                <li class="">mysql</li>
+                                <li class="">git</li>
+                            </ul>
                         </div>
                     </li>
 
@@ -73,21 +98,22 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">에듀랩</h3>
-                            <p>스케쥴링을 활용한 문자전송 배치 프로그램 개발 2021-05 ~ 2021-06
-                                spring의 스케쥴링을 활용해 문자 알림을 위한 배치 프로그램 개발, 각 고객의 학습시작 일자와 결제한 프로그램에 따라서 다음 학습 기간이 달라져 그에 맞게 일자를 계산함
-                                
-                                고객의 데이터를 조회, 관리하는 기능 개발 2020-11 ~ 2021-07
-                                spring을 활용해 고객의 계약,정산,수업내용 등을 날짜별로 테이블 및 스크롤 형태로 조회하는 기능 개발, jQurey를 활용해 아동 학습 컨텐츠를 개발하고 학습 내용 조회가능하게 개발, 안드로이드 IOS 개발자와 협업 진행</p>
+                            <ul>
+                                <li>Spring Scheduling 활용해 배치 프로그램 개발, 각 고객의 학습시작 일자와 결제한 프로그램에 따라서 문자 알림을 전송</li>
+                                <li>고객의 계약,정산,수업내용 등을 날짜별로 테이블 및 스크롤 형태로 조회</li>
+                                <li>Android,IOS 통신을 위한 서버 API개발</li>
+                            </ul>
+                            <ul class="tag-list">
+                                <li class="">java</li>
+                                <li class="">spring</li>
+                                <li class="">maven</li>
+                                <li class="">jsp/jquery</li>
+                                <li class="">mysql</li>
+                                <li class="">git</li>
+                            </ul>
                         </div>
                     </li>
 
-                    <!-- <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 class="timeline-title">블랜딩(알바)</h2>
-                        </div>
-                    </li> -->
                     <li class="timeline-item">
                         <div class="timeline-info">
                             <span>2019,03-18~2020,05-30</span>
@@ -95,17 +121,20 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">블랜딩</h3>
-                            <p>약 일년동안 외주개발 회사에서 개발 알바를 진행, Unity를 활용한 2D게임 멀티플레이 개발을 하였습니다.</p>
+                            <ul>
+                                <li>Unity UGUI개발, Spring WebSocket 통신서버 구축하여 4인 멀티플레이 게임 외주 개발 2가지 진행</li>
+                            </ul>
+                            <ul class="tag-list">
+                                <li class="">unity c#</li>
+                                <li class="">java</li>
+                                <li class="">spring</li>
+                                <li class="">mysql</li>
+                                <li class="">svn</li>
+                            </ul>
                         </div>
                     </li>
 
-                    <!-- <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 class="timeline-title">주식회사 제이엠트레이딩</h2>
-                        </div>
-                    </li> -->
+
                     <li class="timeline-item">
                         <div class="timeline-info">
                             <span>2018,05-25~2019,03-08</span>
@@ -113,17 +142,12 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">주식회사 제이엠트레이딩</h3>
-                            <p>카페24/고도몰/네이버 쇼핑몰 사이트 관리, 파이썬으로 크롤링 작업</p>
+                            <ul>
+                                <li>카페24/고도몰/네이버 쇼핑몰 사이트 관리</li>
+                            </ul>
                         </div>
                     </li>
 
-                    <!-- <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 class="timeline-title">제우미디어</h2>
-                        </div>
-                    </li> -->
                     <li class="timeline-item">
                         <div class="timeline-info">
                             <span>2017,09-18~2018,04-30</span>
@@ -131,7 +155,13 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">제우미디어</h3>
-                            <p>워드프레스 사이트 데이터베이스 백업/이전, 플러그인 적용/수정</p>
+                            <ul>
+                                <li>워드프레스 사이트 데이터베이스 백업/이전, 플러그인 적용/수정</li>
+                            </ul>
+                            <ul class="tag-list">
+                                <li class="">wordpress</li>
+                                <li class="">php</li>
+                            </ul>
                         </div>
                     </li>
                 </ul>

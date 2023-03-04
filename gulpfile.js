@@ -60,7 +60,7 @@ function fonts() {
 /*
  * Minify images
  */
-function imagemin() {
+function image() {
 	return src('src/img/**/*.{jpg,png,gif}')
 	.pipe(plumber())
 	.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
@@ -74,7 +74,7 @@ function js() {
 	.pipe(plumber())
 	.pipe(concat('main.js'))
 	.pipe(uglify())
-	.pipe(gulp.dest('assets/js/'))
+	.pipe(gulp.dest('assets/js/'));
 }
 
 function watchFiles() {
@@ -90,7 +90,7 @@ function watchFiles() {
 exports.js = js;
 exports.fonts = fonts;
 exports.css = css;
-exports.imagemin = imagemin;
+exports.image = image;
 
-exports.default = parallel(js,css,fonts,imagemin);
+exports.default = parallel(js,css,fonts,image);
 exports.watch = parallel(watchFiles, browserSync);
