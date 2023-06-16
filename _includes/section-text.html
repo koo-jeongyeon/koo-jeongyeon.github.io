@@ -1,0 +1,10 @@
+{% for item in include.content %}
+<div class="row clearfix layout">
+  <div class="col-xs-12 col-sm-8 col-md-12 col-print-12 content">
+    <div class="details">
+      <h4 id="{{ item.sub_title | slugify }}">{{ item.sub_title }}</h4>
+    </div>
+    {{ item.description | strip | markdownify }}
+  </div>
+</div>
+{% endfor %}

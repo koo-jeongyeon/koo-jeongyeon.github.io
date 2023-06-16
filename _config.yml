@@ -1,25 +1,208 @@
-# Site settings
-title: jykoo document
-# description: >- # this means to ignore newlines until "baseurl:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://koo-jeongyeon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
-# User settings
-username: Koo-Jeongyeon
-user_description: I'm gonna live by achieving everything i want.
-user_title: Backend Developer
+# Content configuration version
+version: 2
+
+# Personal info
+name: KOO JEONG YEON
+title: Backend Developer (1996.02)
 email: noey458749@gmail.com
-# twitter_username: lorem_ipsum
-# instagram_username: koo-jeongyeon
-# facebook_username: koo-jeongyeon
-# linkedin_username: koo-jeongyeon
+# email_title: Email (Email title override)
+phone: 
+# phone_title: Phone (Phone title override)
+website: https://koojeongyeons-engineering-wiki.gitbook.io/engineering-wiki/
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+twitter_username: 
 github_username:  koo-jeongyeon
-# medium_username: lorem_ipsum
-medium_url: koojeongyeons-engineering-wiki.gitbook.io/engineering-wiki/
-# gplus_username:  lorem_ipsum
+stackoverflow_username: 
+dribbble_username: 
+facebook_username: 
+flickr_username: 
+instagram_username: 
+linkedin_username: 
+xing_username: 
+pinterest_username: 
+youtube_username: 
+orcid_username: 
+googlescholar_username: 
 
-exclude: ['package.json', 'src', 'node_modules', 'vendor']
+# Additional icon links
+additional_links:
+- title: Link name
+  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+  url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
 
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: #Directory of profile image (eg. images/profile.jpg)
+about_content: | # this will include new lines to allow paragraphs
+  3년이상 spring boot로 개발한 경력이 있습니다. 
+  장점은 적응력이 높고, 개발하면서 진행한 구체적인 내용들은 전부 기록하고 저장하는 습관이 있으며, 스케쥴을 노션이나 트렐로 등을 활용해 잘 관리할 줄 아는것. 그리고 다양한 환경에서 개발한 경험이 있어 어떤 환경이든 잘 적응하는 적응력입니다.
+  최근 약 1년간 경험한 클라우드 플랫폼 기술에 강한 호기심이 있고 특히 AWS 위주로 자격증을 따기 위해 준비하고 있습니다. 
+  현재는 지속적으로 오래 근무 가능한곳을 희망하고 있습니다. 
+
+content:
+  - title: Skill
+    layout: list
+    content:
+      - layout: left
+        title: Language
+        description: |
+          - Java, JavaScript
+      - layout: left
+        title: Framework & Library
+        description: |
+          - Spring Boot_(JPA, Querydsl, Hibernate, JWT, Security, JUnit, Cloud AWS)
+      - layout: left
+        title: Database
+        description: |
+          - MySQL, MongoDB(atlas), H2 Database
+      - layout: left
+        title: DevOps
+        description: |
+          - AWS_(EC2, ELB(beanstalk), ECR, Route53, Lambda, S3)
+          - Ubuntu, Apache Tomcat, Docker
+          - Elastic Cloud_(filebeat, logstash, Kibana)
+      - layout: left
+        title: ETC
+        description: |
+          - Git_(Github, Gitlab) Jira, Slack, Trello, Nontion, IntelliJ, Visual Studio Code
+  - title: Career
+    layout: list
+    content:
+      - layout: left
+        title: DotDotDot(닫닫닫)
+        sub_title: Java & Spring 백엔드 개발자
+        caption: 2022.10 - 2023.04 
+        quote: >
+          메타버스 기반의 소셜미디어 앱 서비스
+        description: 신규 소셜미디어 앱 서비스 출시를 위해 백엔드 개발팀에 합류하게 되었습니다. 앱의 회원과 컨텐츠(음성,이미지,텍스트)관리를 위한 API개발과 서버 인프라 구축 및 예러코드를 정의하고 문서화하며 예외처리 전략을 적용하였습니다. 
+          또한 로그 모니터링을 위한 인프라를 세팅하여 전사 테스트시 에러로그를 테이블 형태로 빠르게 확인할 수 있도록 하였습니다.
+      - layout: left
+        title: 루트에너지
+        sub_title: Java & Spring 백엔드 개발자
+        caption: 2021.09 - 2022.09
+        quote: >
+          재생에너지 크라우드펀딩 플랫폼 서비스
+        description: 설명설명셜명
+      - layout: left
+        title: 에듀랩
+        sub_title: 웹개발자
+        caption: 2020.08 - 2021.08
+        quote: >
+          게임기반 아동용 학습 서비스를 제공하는 에듀테크
+        description: 설명설명셜명
+  - title: DotDotDot(닫닫닫)
+    layout: text
+    content: 
+      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+        description: | 
+          - 설명설명셜명
+          - 설명설명셜명
+      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+        description: | 
+          - 설명설명셜명
+          - 설명설명셜명
+  - title: 루트에너지
+    layout: text
+    content: 
+      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+        description: | 
+          - 설명설명셜명
+          - 설명설명셜명
+      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+        description: | 
+          - 설명설명셜명
+          - 설명설명셜명
+  - title: 에듀랩
+    layout: text
+    content: 
+      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+        description: | 
+          - 설명설명셜명
+          - 설명설명셜명
+      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+        description: | 
+          - 설명설명셜명
+          - 설명설명셜명
+  # - title: Projects # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: left
+  #       border: weak  # Value of `weak` will display a weak border below this item. # Any 
+  #                     # other value (or no value) means no border will be displayed
+  #       title: plantRow
+  #       link: https://github.com/koo-jeongyeon/PlantRow
+  #       link_text: https://github.com/koo-jeongyeon/PlantRow
+  #       additional_links:
+  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #           icon: fab fa-github
+  #           url: https://github.com/koo-jeongyeon/PlantRow
+  #       # quote: >
+  #       #   Short overview of the project (optional)
+  #       description: |
+  #         `JAVA` `Spring Boot`
+
+  #         식물의 물주기와 영양을 관리하는 사이트
+  #     - layout: left
+  #       border: weak  # Value of `weak` will display a weak border below this item. # Any 
+  #                     # other value (or no value) means no border will be displayed
+  #       title: catblockGame
+  #       link: https://github.com/koo-jeongyeon/catblockgame
+  #       link_text: https://github.com/koo-jeongyeon/catblockgame
+  #       additional_links:
+  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #           icon: fab fa-github
+  #           url: https://github.com/koo-jeongyeon/catblockgame
+  #       description: 고양이 블럭
+  - title: Education
+    layout: text
+    content:
+      - sub_title: 
+        description: | 
+          - [2018 - 현재] 한국방송통신대학교 컴퓨터과학과 (2024년 졸업예정)
+          - [2017] 국비지원학원 구디아카데미 수료
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]

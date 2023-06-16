@@ -83,7 +83,7 @@ function watchFiles() {
     watch('src/js/**/*.js', parallel(js))
     watch('src/fonts/**/*.{tff,woff,woff2}', parallel(fonts))
 	watch('src/img/**/*.{jpg,png,gif}', parallel(imagemin))
-    watch(['*html', '_includes/*html', '_layouts/*.html'])
+    watch(['*html', '_includes/*html', '_layouts/*.html', '_config.yml'])
     .on('change', browserReload());
 }
 
