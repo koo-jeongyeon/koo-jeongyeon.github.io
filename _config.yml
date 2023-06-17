@@ -52,10 +52,9 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: #Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  3년이상 spring boot로 개발한 경력이 있습니다. 
-  장점은 적응력이 높고, 개발하면서 진행한 구체적인 내용들은 전부 기록하고 저장하는 습관이 있으며, 스케쥴을 노션이나 트렐로 등을 활용해 잘 관리할 줄 아는것. 그리고 다양한 환경에서 개발한 경험이 있어 어떤 환경이든 잘 적응하는 적응력입니다.
-  최근 약 1년간 경험한 클라우드 플랫폼 기술에 강한 호기심이 있고 특히 AWS 위주로 자격증을 따기 위해 준비하고 있습니다. 
-  현재는 지속적으로 오래 근무 가능한곳을 희망하고 있습니다. 
+  Java & Spring 을 주력으로 개발해온 백엔드 개발자 구정연입니다.
+  소셜, 크라우드펀딩, 에듀테크 등의 서비스에서 백엔드 플랫폼 개발 및 서버 인프라 구축 등을 수행했으며 다양한 개발환경에서의 경험을 기반으로 새로운 환경에 적응이 빠른 편입니다. 
+  개발 커리어를 쌓기 위해 아르바이트부터 경험을 쌓기 시작하여 끊임없이 일을 지속해왔습니다. 어려운 문제에 부딫히더라도 끈기있게 해결해나가는 자세가 중요하다는 신념하에 새로운 개발을 즐깁니다.
 
 content:
   - title: Skill
@@ -64,7 +63,7 @@ content:
       - layout: left
         title: Language
         description: |
-          - Java, JavaScript
+          - Java(JSP,VUE), JavaScript
       - layout: left
         title: Framework & Library
         description: |
@@ -72,7 +71,7 @@ content:
       - layout: left
         title: Database
         description: |
-          - MySQL, MongoDB(atlas), H2 Database
+          - MySQL, Mssql, MongoDB(atlas), H2 Database
       - layout: left
         title: DevOps
         description: |
@@ -82,32 +81,52 @@ content:
       - layout: left
         title: ETC
         description: |
-          - Git_(Github, Gitlab) Jira, Slack, Trello, Nontion, IntelliJ, Visual Studio Code
+          - Git_(Github, Gitlab) Jira, Slack, Trello, Notion, IntelliJ, Visual Studio Code
   - title: Career
     layout: list
     content:
       - layout: left
         title: DotDotDot(닫닫닫)
         sub_title: Java & Spring 백엔드 개발자
-        caption: 2022.10 - 2023.04 
+        caption: 2022.10 - 2023.04 (6개월)
         quote: >
           메타버스 기반의 소셜미디어 앱 서비스
-        description: 신규 소셜미디어 앱 서비스 출시를 위해 백엔드 개발팀에 합류하게 되었습니다. 앱의 회원과 컨텐츠(음성,이미지,텍스트)관리를 위한 API개발과 서버 인프라 구축 및 예러코드를 정의하고 문서화하며 예외처리 전략을 적용하였습니다. 
+        description: |
+          신규 소셜미디어 앱 서비스 출시를 위해 백엔드 개발팀에 합류하게 되었습니다. 앱의 회원과 컨텐츠관리를 위한 API개발과 서버 인프라 구축 및 예러코드를 정의하고 문서화하며 예외처리 전략을 적용하였습니다. 
           또한 로그 모니터링을 위한 인프라를 세팅하여 전사 테스트시 에러로그를 테이블 형태로 빠르게 확인할 수 있도록 하였습니다.
+
+          - Java17(Spring, Vue, Gradle, MongoDB atlas), AWS, Docker, Elastic Cloud, Git(Gitlab), Jira
       - layout: left
         title: 루트에너지
         sub_title: Java & Spring 백엔드 개발자
-        caption: 2021.09 - 2022.09
+        caption: 2021.09 - 2022.09 (1년)
         quote: >
           재생에너지 크라우드펀딩 플랫폼 서비스
-        description: 설명설명셜명
+        description: |
+          서비스중인 크라우드펀딩 플랫폼의 데이터로 외부 솔루션 API와 연동한 배치 프로젝트 개발과 채권마켓 테스트를 위한 서버 인프라 구축을 진행 하였습니다. 
+
+          - Java8(Spring, JSP, Gradle, Mysql), GCP, Ubuntu, Tomcat, Git(Gitlab), Slack, Notion
       - layout: left
         title: 에듀랩
         sub_title: 웹개발자
-        caption: 2020.08 - 2021.08
+        caption: 2020.08 - 2021.08 (1년)
         quote: >
           게임기반 아동용 학습 서비스를 제공하는 에듀테크
-        description: 설명설명셜명
+        description: |
+          신규 저학년 학습용 서비스의 하이브리드앱 전체 기능 개발과 유지보수, 학습용 게임 스크립트의 버그 수정을 수행했습니다.
+
+          - Java8(Spring, JSP, Maven, Mssql), JavaScript(JQuery), Git(Github)
+      - layout: left
+        title: 블랜딩 
+        sub_title: |
+          [파트타임] 게임 개발자
+        caption: 2019.03 - 2020.05 (1년2개월)
+        quote: >
+          웹 사이트 및 미니 게임 개발 서비스를 제공하는 SI
+        description: |
+          파트타임으로 카드게임과 브루마블 게임 클라이언트 및 서버 개발, 유지보수를 진행하며 자바 스프링 개발자로 커리어를 쌓는 계기가 되었습니다.
+
+          - Java8(전자정부 Spring, Maven, Mysql), JavaScript(JQuery), Unity, SVN
   - title: DotDotDot(닫닫닫)
     layout: text
     content: 
