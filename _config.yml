@@ -103,7 +103,7 @@ content:
         quote: >
           재생에너지 크라우드펀딩 플랫폼 서비스
         description: |
-          서비스중인 크라우드펀딩 플랫폼의 데이터로 외부 솔루션 API와 연동한 배치 프로젝트 개발과 채권마켓 테스트를 위한 서버 인프라 구축을 진행 하였습니다. 
+          서비스중인 크라우드펀딩 플랫폼의 데이터로 외부 솔루션 API와 연동한 배치 프로젝트 개발과 원리금수취권 거래 테스트를 위한 서버 인프라 구축을 진행 하였습니다. 
 
           - Java8(Spring, JSP, Gradle, Mysql), GCP, Ubuntu, Tomcat, Git(Gitlab), Slack, Notion
       - layout: left
@@ -155,30 +155,51 @@ content:
         description: | 
           - 개발환경 : Java(Spring Boot)
           - 비즈니스 로직의 에러코드를 한곳에서 관리하기 위해 ErrorCode를 정의하는 enum을 생성하고 RuntimeException을 상속받는 ApiException클래스를 만들어 @ExceptionHandler를 사용해 
-            의도적인 에러 발생 조건에 부합할시 ErrorCode를 매개변수로 하는 ApiException를 throw 처리. 
-            ApiExceptionHandler 클래스를 생성하여 @RestControllerAdvice를 사용해 Response body에 Json형태로 에러코드와 메시지를 리턴하도록 구현.
+          의도적인 에러 발생 조건에 부합할시 ErrorCode를 매개변수로 하는 ApiException를 throw 처리. 
+          ApiExceptionHandler 클래스를 생성하여 @RestControllerAdvice를 사용해 Response body에 Json형태로 에러코드와 메시지를 리턴하도록 구현.
   - title: 루트에너지
     layout: text
     content: 
-      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+      - sub_title: 크라우드 펀딩 플랫폼의 코드 분석 및 유지보수업무 (10개월/2021.11~2022.09)
         description: | 
-          - 설명설명셜명
-          - 설명설명셜명
-      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+          - 개발환경 : Java(Spring Boot), Mysql
+          - 외부 솔루션 업체에서 제작한 플랫폼의 코드분석을 위해 담당자와 커뮤니케이션하며 소스코드를 파악해 문서로 정리. 
+          외부팀에서 매달 금결원에 제출해야하는 자료에 필요한 데이터 추출작업 담당. 이후 반복되는 작업들은 @Scheduler로 배치 서비스로 개발하여 담당자 메일로 발송되도록 개선.
+      - sub_title: 크라우드 펀딩 플랫폼의 원리금수취권 거래 기능 테스트를 위한 인프라 구축 및 테스트 (2개월/2022.07~2022.08)
         description: | 
-          - 설명설명셜명
-          - 설명설명셜명
+          - 개발환경 : GCP, Ubuntu, Tomcat
+          - 여유분의 사내 데스크탑에 Ubuntu 설치 및 Apache Tomcat으로 플랫폼의 war파일 배포 가능하도록 세팅. 금결원 테스트API 사용을 위해 솔루션업체와 금결원과 커뮤니케이션.
+          - 원리금수취권 거래 기능의 테스트케이스를 작성하여 팀원들에게 배포하고 테스트 진행.
+      - sub_title: 크라우드 펀딩 플랫폼의 자금세탁방지(AML)솔루션 구축을 위한 배치 서비스 개발 (1개월/2021.10~2021.10)
+        description: | 
+          - 개발환경 : Java(Spring Boot), GCP
+          - 새로가입한 회원들의 고객확인절차(KYC)가 필요해 외부 솔루션 업체의 API로 고객정보를 전달하는 배치 서비스를 @Scheduler를 활용해 개발. 매일 특정시간에 외부 AML솔루션 업체에 내부 데이터 적재하는 배치 서비스 개발.
+          - GCP에 배치 서비스 배포 인프라 구축 내부망 데이터베이스에 접근하기 위해 vpn연결이 필요해 openfortivpn을 활용해 연결. 서버의 크론탭에 매시간 vpn연결을 체크하여 연결이 끊기면 다시 연결되도록 쉘 스크립트 작성.
   - title: 에듀랩
     layout: text
     content: 
-      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+      - sub_title: 신규 저학년 대상 학습용 하이브리드 앱의 API서버 개발 및 프런트 개발 (5개월/2020.10~2021.02)
         description: | 
-          - 설명설명셜명
-          - 설명설명셜명
-      - sub_title: 프로젝트 관련된 설명 (2개월/2020.01~2020.02)
+          - 개발환경 : Java(Spring), JavaScript(JQuery), Mssql
+          - 저학년을 대상으로 한 학습용 앱의 2차버전 개발과 학생들의 학습내역을 조회 및 그래프로 확인할 수 있는 앱의 서버API 개발과 화면 렌더링 구현, ERD구상하여 테이블 구현. 네이티브 앱 개발자와 협업을 진행 하였으며 브릿치 추가 작업.
+          학습을 위한 화면 레이아웃 html파일 받아서 JSP로 작업. 이미지,음성 등의 비정형데이터 서버에 업로드하고 앱에서 조회,수정,삭제 하는 등 기본적인 CRUD 구현.
+          - 학습 컨텐츠는 개월별로 계속해서 생성되고 업데이트 되기 때문에 화면단의 jsp파일이 방대하게 늘어나지 않도록 최대한 재사용이 가능하도록 화면단 구현. 컨텐츠를 하나하나 파일질라로 서버에 업로드 하는 방식이 비효율적이라 생각해 
+          기획애 없더라도 남는 시간에 운영을 위한 컨텐츠 업로드 툴을 추가로 개발함. 컨텐츠 업로드시 많은 시간을 단축.
+      - sub_title: 신규 저학년 대상 학습용 하이브리드 앱의 팝업 구현 및 유지보수 (7개월/2021.02~2021.08)
         description: | 
-          - 설명설명셜명
-          - 설명설명셜명
+          - 개발환경 : Java(Spring), JavaScript(JQuery), Mssql
+          - 버전정보를 체크하여 디바이스와 디비의 버전이 다르면 점검 및 업데이트 팝업이 호출되도록 구현. @Scheduler로 30분간격으로 버전 체크 실행. 공지사항의 추가 개발과 유지보수 진행.
+  - title: 블랜딩
+    layout: text
+    content: 
+      - sub_title: 유니티를 기반으로한 4인 멀티플레이 게임 개발 및 수정 (12개월/2019.04~2020.04)
+        description: | 
+          - 개발환경 : Java(Spring), WebSocket, Unity, Mysql
+          - 웹에서 이더리움을 충전하여 게임에서 4인 멀티플레이 게임을 진행하는 방식으로 훌라와 브루마블 등의 게임 제작. WebSocket으로 서버와 Unity클라이언트간 json형태 패킷 통신을 구현.
+          유저가 접속하면 WebSocketSession에 세션값 저장하여 Socket handler에서 입장과 퇴장시 초기화 로직 실행. 
+          - 클라이언트에서 4인팟 Room입장시 서버로 해당 데이터 json패킷 전송, 해당 룸클래스의 유저배열에 추가하여 2이상 모이면 게임시작버튼 생성.
+          유저가 해당 턴에 액션을 취했을시 방에 있는 모든 유저들에게도 해당 액션에 대해 서버에서 json패킷을 전송해 동기화, 클라이언트에서 확인 가능하도록 애니메이션 개발.
+          턴마다 시간제한을 두고 시간제한이 넘어갈 시 패스하도록 구현하는 등의 게임 로직 구현을 담당.
   # - title: Projects # Title for the section
   #   layout: list # Type of content section (list/text)
   #   content:
